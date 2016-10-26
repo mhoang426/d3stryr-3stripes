@@ -38,8 +38,11 @@ Python 3 implementation of d3stryr-3stripes
    ```
    virtualenv -p python3 --no-site-packages .
    ```
-   
    Dont forget the period at the end!
+   Windows:
+   ```
+   virtualenv venv
+   ```
 
 4. Activate the virtual environment (needs to be done for once for an active session in your terminal):
    
@@ -49,7 +52,7 @@ Python 3 implementation of d3stryr-3stripes
    ```
    Windows:
    ```
-   Scripts\activate
+   venv\scripts\activate.bat
    ```
    
 5. Install the requirements (needs to be done once per install):
@@ -147,6 +150,11 @@ Then you are ready to run:
 
 ```
 ./d3stryr-3stripes.py
+```
+Windows:
+```
+venv\scripts\activate.bat
+python d3stryr-3stripes.py
 ```
 ## Program Flow
 *  The script will look up the either the Variant endpoint for inventory or the Client endpoint for inventory (or it may do both - with Client stock being used for the remainder of the run).
